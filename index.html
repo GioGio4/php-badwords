@@ -10,8 +10,12 @@
 
 <body>
 
-    <form method="POST">
-        <textarea placeholder="Inserisci il paragrafo..." name="paragraph" id="paragraph" cols="25" rows="5"></textarea>
+    <form method="POST" action="./badwords.php">
+        <!-- Per comodità inserisco un paragrafo preimpostato -->
+        <textarea name="paragraph" id="paragraph" cols="25" rows="5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, iure, lorem adipisicing elit. lorem !
+        </textarea>
+        <br>
+        <label for="badword">Prova con "lorem"</label>
         <br>
         <input type="text" placeholder="Parola da censurare?" name="badword" id="badword">
         <button>Invia</button>
